@@ -1,0 +1,59 @@
+
+.card-1{
+   grid-area: card1;
+   background-color: white;
+   border-radius: 10px;
+   overflow-y: scroll;
+}
+.card-2{
+    grid-area: card2;
+    background-color: white;
+    overflow: scroll;
+}
+
+.card-3{
+    grid-area: card3;
+    background-color: white;
+    overflow: scroll;
+}
+.card-4{
+    grid-area: card4;
+    background-color: white;
+    overflow: scroll;
+}
+.card-5{
+    grid-area: card5;
+    background-color: white;
+    overflow: scroll;
+}
+.card-container{
+     margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 220px 220px;
+    gap: 20px;
+    grid-template-areas: 
+       "card1 card2 card3"
+       "card4 card2 card5";
+}
+
+@media(max-width:800px){
+    .card-container{
+        margin-top: 2rem;
+       display: grid;
+       grid-template-columns: 1fr ;
+       grid-template-rows: 220px ;
+       gap: 20px;
+       grid-template-areas: 
+          "card1 "
+          "card2"
+          "card2"
+          "card3"
+          "card4"
+          "card5"
+   }
+   .dashboard{
+    overflow-y: scroll;
+    height: 100vh;
+}
+}
