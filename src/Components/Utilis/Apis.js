@@ -1,4 +1,4 @@
- const host ='http://localhost:3040'
+ const host ='https://project-tool.onrender.com'
  
  export const login=`${host}/user/login`;
  export const loginverify=`${host}/user/loginverify`
