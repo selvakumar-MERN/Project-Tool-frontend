@@ -14,7 +14,7 @@ function Addtask(props) {
     const notify = () => toast("Task added sucessfully");
     const{userdata}=useContext(Mycontext)
     const[search,setsearch]=useState("")
-    const [taskdata,setvalue]=useState({email:"selva81222@gmail.com"})
+    const [taskdata,setvalue]=useState({email:""})
     const[searchproject,setproject]=useState("")
    
     
@@ -22,6 +22,7 @@ function Addtask(props) {
     
  const handler=(e)=>{
          const{name,value}=e.target
+         taskdata.email=userdata.email;
          setvalue({...taskdata,[name]:value})
          console.log(taskdata)
  }   
